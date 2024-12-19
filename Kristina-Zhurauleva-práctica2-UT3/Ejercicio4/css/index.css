@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+
+body {
+    max-width: 100%;
+    height: 100%;
+    border: 3px solid;
+    border-color: blue;
+}
+
+.posicion {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+}
+
+.oferta {
+    position: absolute;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: parpadeo 1s infinite;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes parpadeo {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.estrella {
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    background: url("../imagenes/estrella.jpg") repeat center/cover;
+}
+
+body>header {
+    min-height: 10vh;
+    max-width: 100vw;
+    border-bottom: 5px solid purple;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: rgb(183, 162, 136);
+}
+
+header {
+    border: 3px solid slategray;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+input,
+label,
+button {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@keyframes animacion {
+    0% {
+        transform: scale(1)
+    }
+
+    50% {
+        transform: scale(1.2)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+    transition: 5s ease-in-out;
+    animation-name: animacion;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+label {
+    color: aliceblue;
+}
+
+button {
+    background: url("../imagenes/free-icon-loupe-751463.png") no-repeat center / contain;
+    height: 20px;
+    width: 20px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    /* background-color: rgb(40, 59, 59);*/
+    padding: 10px 10px 40px 10px;
+    transition: 4s;
+    /* box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.8);*/
+}
+
+img:hover {
+    transform: scale(1.2);
+}
+
+.frontera {
+    border: 5px solid yellowgreen;
+    position: relative;
+}
+
+.frontera:hover {
+    transform: rotate(20deg) scale(1);
+}
+
+nav {
+    max-width: 100vw;
+    max-height: 8vh;
+    border: 3px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    padding: .0.5em;
+    margin-bottom: .0.5em;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    min-height: 60vh;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 0px 2px #777;
+}
+
+footer {
+    min-height: 20vh;
+    border: 3px solid blueviolet;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: rgb(183, 162, 136);
+}
+
+footer>p {
+    padding-right: 10px;
+}
